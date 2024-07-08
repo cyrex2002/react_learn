@@ -1,7 +1,8 @@
+// import food1 from './assets/apple.jpg';
 function Card() {
     return (
         <div className="card">
-            <img src="https://via.placeholder.com/150" alt="Food Picture" />
+            {/* <img className="card-image" src={food1} alt="Food Picture" /> */}
             <h2>Apple</h2>
             <p>Apple is a fruit</p>
         </div>   
