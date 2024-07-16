@@ -29,7 +29,7 @@ function Card(props) {
                 <button className="button" onClick={decrement}>-</button>
                 <button className="button" onClick={reset}>reset</button>
             </div>
-            <Button className='button' fruit={props.name} counter={count} > </Button>
+            <Button class_Name='button' fruit={props.name} counter={count}> </Button>
         </div>   
     );
 }
