@@ -28,3 +28,25 @@
     color: white;
     margin-top: 10px;
 }
+
+.count-change{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-right: 4em;
+}
+.card .button{
+    border-radius: 10px;
+    margin: 2px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.button{
+    border-radius: 10px;
+    margin: 2px;
+    border-style: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
