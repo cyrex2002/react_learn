@@ -1,14 +1,15 @@
 function Header(params) {
     return(
         <header className="header">
-            <h1 className="title">Senuja Jayasekara</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <hr />
+            <h1 className="title">Fruit Market</h1>
+            <hr />
+            <ul className="nav">
+                <li className="nav-item"><a href="#">Home</a></li>
+                <li className="nav-item"><a href="#">Services</a></li>
+                <li className="nav-item"><a href="#">About</a></li>
+                <li className="nav-item"><a href="#">Contact</a></li>    
             </ul>
+            <hr />
         </header>
     )
 }
