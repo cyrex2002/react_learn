@@ -1,0 +1,33 @@
+body {
+    font-family: monospace;
+}
+
+.colour-picker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 40px;
+}
+
+.colour-display {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(145, 145, 145, 0.856);
+    border-radius: 25px;
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+}
+
+.colour-display p {
+    font-size: 20px;
+}
+
+input[type="color"] {
+    margin: 20px;
+}
