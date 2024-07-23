@@ -12,10 +12,10 @@ function App() {
   return (
     <>
     <Header/>
-    <Food/>
     <Card name="Apple" image={food1} />
     <Card name="Orange" image={food2} />
     <Card name="Banana" image={food3} />
+    <Food/>
     <Footer/> 
     </>
   );
