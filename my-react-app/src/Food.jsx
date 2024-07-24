@@ -1,16 +1,14 @@
 import React, {useState} from 'react';
 
 function Food(){
-    const food1 = 'apple';
-    const food2 = 'banana';
-    const [foods, setFoods] = useState(['Apple', 'Banana']);
+    const [foods, setFoods] = useState([]);
 
     const [foodName, setFoodName] = useState("");
-    const [foodOrigin, setFoodOriginal] = useState("");
+    const [foodOrigin, setFoodOrigin] = useState("");
     const [foodExpire, setFoodExpire] = useState("");
-    
 
-    
+   
+
     function createFruit(){
 
         const newFood = {
@@ -18,19 +16,35 @@ function Food(){
             origin: foodOrigin,
             expire: foodExpire
         }
-
-    //    const newFood = document.getElementById('new').value;
-        document.getElementById('new').value = '';  //clear the input field
         setFoods(f =>[...f, newFood]);
+
+        setFoodName('');
+        setFoodOrigin(''); 
+        setFoodExpire('');
+    }
+
+    function handleFoodName(event){
+        setFoodName(event.target.value);
+    }
+    function handleFoodOrigin(event){
+        setFoodOrigin(event.target.value);
+    }
+    function handleFoodExpire(event){
+        setFoodExpire(event.target.value);
     }
 
     return(
         <>
         <h2>Enter fruits that you like</h2>
         <ul>
-            {foods.map((food, index) => ( <li key={index}>{food}</li>))}
+            {foods.map((newFood, index) => ( 
+                <li key={index}>
+                    {newFood.name} {newFood.origin} {newFood.expire}
+                </li>))}
         </ul>
-        <input type="text" placeholder='Enter here' id='new' />
+        <input type="text" placeholder='Enter Name here'  onChange={handleFoodName} value={foodName}/>
+        <input type="text" placeholder='Enter Origin here'  onChange={handleFoodOrigin} value={foodOrigin}/>
+        <input type="text" placeholder='Enter Expire here'  onChange={handleFoodExpire} value={foodExpire}/>
         <button onClick={createFruit}>Add Fruit</button>
         </>
         
