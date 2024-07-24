@@ -6,7 +6,7 @@ function Food(){
     const [foods, setFoods] = useState(['Apple', 'Banana']);
     
     
-
+//
     function createFruit(){
         const newFood = document.getElementById('new').value;
         document.getElementById('new').value = '';  //clear the input field
