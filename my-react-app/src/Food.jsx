@@ -4,11 +4,22 @@ function Food(){
     const food1 = 'apple';
     const food2 = 'banana';
     const [foods, setFoods] = useState(['Apple', 'Banana']);
+
+    const [foodName, setFoodName] = useState("");
+    const [foodOrigin, setFoodOriginal] = useState("");
+    const [foodExpire, setFoodExpire] = useState("");
     
+
     
-//
     function createFruit(){
-        const newFood = document.getElementById('new').value;
+
+        const newFood = {
+            name: foodName,
+            origin: foodOrigin,
+            expire: foodExpire
+        }
+
+    //    const newFood = document.getElementById('new').value;
         document.getElementById('new').value = '';  //clear the input field
         setFoods(f =>[...f, newFood]);
     }
