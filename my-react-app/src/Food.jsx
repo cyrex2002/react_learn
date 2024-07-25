@@ -44,7 +44,7 @@ function Food(){
         </ul>
         <input type="text" placeholder='Enter Name here'  onChange={handleFoodName} value={foodName}/>
         <input type="text" placeholder='Enter Origin here'  onChange={handleFoodOrigin} value={foodOrigin}/>
-        <input type="text" placeholder='Enter Expire here'  onChange={handleFoodExpire} value={foodExpire}/>
+        <input type="text" placeholder='Enter Expire here'  onChange={handleFoodExpire} value={foodExpirenpm}/>
         <button onClick={createFruit}>Add Fruit</button>
         </>
         
